@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentaion.menu.MenuActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_line_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="115dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vector_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="116dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_marathon_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="104dp"
+        android:layout_marginStart="60dp"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/marathon_title_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마라톤"
+            android:fontFamily="@font/noto_sans_kr_500"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/marathon_detail_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자신의 한계를 넘어 도전해봐요"
+            android:fontFamily="@font/noto_sans_kr_400"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marathon_title_menu"
+            android:textSize="12dp"
+            android:layout_marginTop="6dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_marathon_first_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/marathon_sub1_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체 공지"
+                android:fontFamily="@font/noto_sans_kr_500"
+                android:includeFontPadding="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="14dp"
+                android:textColor="#646877"
+                android:layout_marginTop="70dp"/>
+
+            <ImageView
+                android:id="@+id/marathon_btn1_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:src="@drawable/ic_go_menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/marathon_sub1_menu"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="78dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/@+id/layout_marathon_second_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/marathon_sub2_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="참가한 마라톤"
+                android:fontFamily="@font/noto_sans_kr_500"
+                android:includeFontPadding="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="14dp"
+                android:textColor="#646877"
+                android:layout_marginTop="122dp"/>
+
+            <ImageView
+                android:id="@+id/marathon_btn2_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:src="@drawable/ic_go_menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/marathon_sub2_menu"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="130dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="20dp"
+        android:background="#F7F8FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_marathon_menu"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_info_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="336dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_info_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="312dp"
+        android:layout_marginStart="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_title_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동 정보"
+            android:fontFamily="@font/noto_sans_kr_500"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/info_detail2_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더 나은 러닝 라이프를 위해 살펴봐요"
+            android:fontFamily="@font/noto_sans_kr_400"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_title_menu"
+            android:textSize="12dp"
+            android:layout_marginTop="6dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_info_first_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/info_sub1_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="스트레칭"
+                android:fontFamily="@font/noto_sans_kr_500"
+                android:includeFontPadding="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="14dp"
+                android:textColor="#646877"
+                android:layout_marginTop="70dp"/>
+
+            <ImageView
+                android:id="@+id/info_btn1_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:src="@drawable/ic_go_menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/info_sub1_menu"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="78dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_info_second_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/info_sub2_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="근력운동"
+                android:fontFamily="@font/noto_sans_kr_500"
+                android:includeFontPadding="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="14dp"
+                android:textColor="#646877"
+                android:layout_marginTop="122dp"/>
+
+            <ImageView
+                android:id="@+id/info_btn2_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:src="@drawable/ic_go_menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/info_sub2_menu"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="130dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_info_third_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/info_sub3_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="런데이 팁"
+                android:fontFamily="@font/noto_sans_kr_500"
+                android:includeFontPadding="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="14dp"
+                android:textColor="#646877"
+                android:layout_marginTop="176dp"/>
+
+            <ImageView
+                android:id="@+id/info_btn3_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:src="@drawable/ic_go_menu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/info_sub3_menu"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="183dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="20dp"
+        android:background="#F7F8FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="57dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_info_menu"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottom_second_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/info_detail_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도움말"
+            android:fontFamily="@font/noto_sans_kr_400"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="16dp"
+            android:textColor="#1E2026"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="632dp"/>
+
+        <ImageView
+            android:id="@+id/info_detailbtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bottombtn_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/info_detail_menu"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="639dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottom_first_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/info_store_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스토어"
+            android:fontFamily="@font/noto_sans_kr_400"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="16dp"
+            android:textColor="#1E2026"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="632dp"/>
+
+        <ImageView
+            android:id="@+id/info_storebtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bottombtn_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/info_store_menu"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="639dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottom_third_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/info_site_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공식 사이트"
+            android:fontFamily="@font/noto_sans_kr_400"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="16dp"
+            android:textColor="#1E2026"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="689dp"/>
+
+        <ImageView
+            android:id="@+id/info_sitebtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bottombtn_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/info_site_menu"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="696dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottom_fourth_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/info_setting_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환경설정"
+            android:fontFamily="@font/noto_sans_kr_400"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="16dp"
+            android:textColor="#1E2026"
+            android:layout_marginStart="233dp"
+            android:layout_marginTop="685dp"/>
+
+        <ImageView
+            android:id="@+id/info_settingbtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bottombtn_menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/info_setting_menu"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="693dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
