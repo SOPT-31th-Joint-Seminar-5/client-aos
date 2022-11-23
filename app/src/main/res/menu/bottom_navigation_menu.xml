@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/icon_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/menu_record"
+        android:icon="@drawable/icon_record"
+        android:title="@string/record" />
+    <item
+        android:id="@+id/menu_crew"
+        android:icon="@drawable/icon_crew"
+        android:title="@string/crew" />
+    <item
+        android:id="@+id/menu_challenge"
+        android:icon="@drawable/icon_challenge"
+        android:title="@string/challenge" />
+    <item
+        android:id="@+id/menu_my_menu"
+        android:icon="@drawable/icon_mymenu"
+        android:title="@string/my_menu" />
+</menu>
