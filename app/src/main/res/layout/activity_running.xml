@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f3f8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_timer"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/background_round_running"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="1주 1회차 안내"
+            android:textColor="#565d6f"
+            android:fontFamily="@font/noto_sans_kr_500"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_voice"
+            android:layout_width="78dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_week"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="false"
+            app:lottie_rawRes="@raw/voice_lottie_running" />
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05:00"
+            android:textColor="#1c1f27"
+            android:textSize="96dp"
+            android:fontFamily="@font/ropa_mix_pro_italic_700"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lottie_voice"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="준비 걷기"
+            android:textColor="#565d6f"
+            android:fontFamily="@font/noto_sans_kr_700"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_timer" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:max="300"
+            android:paddingVertical="5dp"
+            android:progressDrawable="@drawable/background_round_progress_bar_running"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:constraint_referenced_ids="iv_left, iv_pause_play, iv_right"
+            app:flow_horizontalGap="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress_bar" />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_running" />
+
+        <ImageView
+            android:id="@+id/iv_pause_play"
+            android:layout_width="68dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_play_running"
+            android:tooltipText="play"/>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_running" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_previous_timer"
+        android:layout_width="124dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="170dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/background_previous_running">
+
+        <TextView
+            android:id="@+id/tv_pervious_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="18dp"
+            android:textColor="#66000000"
+            android:text="01:00"
+            android:fontFamily="@font/ropa_mix_pro_italic_700"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="23dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_previous_title"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:id="@+id/tv_previous_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/noto_sans_kr_700"
+            android:text="천천히\n달리기"
+            android:textColor="#565D6F"
+            android:textSize="16dp"
+            android:includeFontPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_following_timer"
+        android:layout_width="124dp"
+        android:layout_height="148dp"
+        android:layout_marginBottom="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/background_following_running">
+
+        <TextView
+            android:id="@+id/tv_following_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="18dp"
+            android:fontFamily="@font/ropa_mix_pro_italic_700"
+            android:textColor="#66000000"
+            android:text="01:00"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="23dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_following_title"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:id="@+id/tv_following_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#565D6F"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/noto_sans_kr_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="천천히\n달리기"
+            android:includeFontPadding="false"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="26dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        app:constraint_referenced_ids="view_1,view_2,view_3,view_4,view_5,
+        view_6,view_7,view_8,view_9,view_10,view_11"
+        app:flow_verticalAlign="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalGap="2dp"
+        android:layout_marginBottom="72dp"/>
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="34dp"
+        android:layout_height="14dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#3B6DFF" />
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="20dp"
+        android:layout_height="70dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#727785" />
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#c2c6ce" />
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="20dp"
+        android:layout_height="70dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#727785" />
+    <View
+        android:id="@+id/view_5"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#c2c6ce" />
+    <View
+        android:id="@+id/view_6"
+        android:layout_width="20dp"
+        android:layout_height="70dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#727785" />
+    <View
+        android:id="@+id/view_7"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#c2c6ce" />
+    <View
+        android:id="@+id/view_8"
+        android:layout_width="20dp"
+        android:layout_height="70dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#727785" />
+    <View
+        android:id="@+id/view_9"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#c2c6ce" />
+    <View
+        android:id="@+id/view_10"
+        android:layout_width="20dp"
+        android:layout_height="70dp"
+        android:background="@drawable/background_round_view_running"
+        android:backgroundTint="#727785" />
+    <View
+        android:id="@+id/view_11"
+        android:layout_width="34dp"
+        android:background="@drawable/background_round_view_running"
+        android:layout_height="14dp"
+        android:backgroundTint="#c2c6ce" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전체 남은 시간 "
+        app:layout_constraintEnd_toStartOf="@id/tv_last_timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="43dp"
+        android:textSize="11sp"
+        android:fontFamily="@font/noto_sans_kr_500"/>
+    <TextView
+        android:id="@+id/tv_last_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22:58"
+        android:fontFamily="@font/ropa_mix_pro_italic_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="49dp"
+        android:textSize="14sp"
+        android:layout_marginEnd="17dp"/>
+    <ImageView
+        android:id="@+id/iv_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_music_running"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="17dp"/>
+    <ImageView
+        android:id="@+id/iv_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock_running"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="17dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_meatball_running"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
