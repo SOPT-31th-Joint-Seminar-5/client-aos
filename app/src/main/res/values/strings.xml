@@ -8,4 +8,8 @@
     <string name="crew">크루</string>
     <string name="challenge">챌린지</string>
     <string name="my_menu">MY메뉴</string>
+    <string name="my_exercise">나의 운동</string>
+    <string name="level_exercise">레벨 운동</string>
+    <string name="time_exercise">시간 운동</string>
+    <string name="custom_exercise">맞춤 운동</string>
 </resources>

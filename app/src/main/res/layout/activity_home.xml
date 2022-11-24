@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".yongmin.HomeActivity">
+    tools:context=".presentation.yongmin.HomeActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.sopt31th.runday.yongmin.HomeFragment"
+        android:name="com.sopt31th.runday.presentation.yongmin.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
@@ -21,6 +21,7 @@
         app:itemIconTint="@color/bottom_navigation_selector"
         app:itemRippleColor="@null"
         app:itemTextColor="@color/bottom_navigation_selector"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

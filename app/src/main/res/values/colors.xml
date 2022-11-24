@@ -12,4 +12,5 @@
     <color name="runday_blue">#3B6DFF</color>
     <color name="runday_purple">#634EFF</color>
     <color name="runday_gray3">#90949E</color>
+    <color name="runday_black">#1C1F27</color>
 </resources>
