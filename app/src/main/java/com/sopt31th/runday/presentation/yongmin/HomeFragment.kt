@@ -1,5 +1,6 @@
 package com.sopt31th.runday.presentation.yongmin
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayout
 import com.sopt31th.runday.R
 import com.sopt31th.runday.databinding.FragmentHomeBinding
+import com.sopt31th.runday.presentation.menu.MenuActivity
 import com.sopt31th.runday.presentation.yongmin.home.TimeExerciseFragment
 
 class HomeFragment : Fragment() {
@@ -22,6 +24,11 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(layoutInflater)
         binding.tabLayout.selectTab(binding.tabLayout.getTabAt(2))
         initTabSelectListener()
+
+        binding.ivMenu.setOnClickListener {
+            val intent = Intent(requireContext(), MenuActivity::class.java)
+            startActivity(intent)
+        }
         return binding.root
     }
 
